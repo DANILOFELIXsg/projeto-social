@@ -42,3 +42,24 @@ iframe#tela {
     width: 269px;
     height: 471px;
 }
+
+/*para tornar um link redondo com imagem*/
+section#redes-sociais img { 
+    width: 50px;
+    /*height: 50px; pode ser tanto width com height ou apenas o width*/
+    margin: 10px;
+    border-radius: 50%; /*para tornar a imagem redonda usando % e não px*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    box-sizing: border-box;
+}
+
+section#redes-sociais {
+    text-align: right; /*caso vc queira trocar a posição dos links-imagem*/
+}
+
+section#redes-sociais img:hover { /*para criar uma borda no link da imagem + o uso do box-sizing no img*/
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-5px, -5px); /*criar um efeito de movimento quando passar o mouse*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600); /*para criar um efeito mais fundo no movimento do mouse*/
+    transition: transform 1s, border 1s; /*criar o movimento de 1s (quantos segundos vc quiser na hora de passar o mouse) o border é para destacar dentro de xsegundos o tempo em que ela irá aparecer*/
+ }
